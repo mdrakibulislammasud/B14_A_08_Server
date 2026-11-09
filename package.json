@@ -1,0 +1,19 @@
+{
+  "name": "community-events-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "better-auth": "^1.7.18",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3",
+    "jose": "^5.10.0",
+    "mongodb": "^6.22.0"
+  }
+}
