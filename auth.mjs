@@ -42,6 +42,13 @@ export const auth = betterAuth({
 
   trustedOrigins,
 
+  advanced: {
+  defaultCookieAttributes: {
+    sameSite: "none",
+    secure: true
+  }
+},
+
   database: mongodbAdapter(
     client.db(DB_NAME),
     { client }
